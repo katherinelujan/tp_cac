@@ -50,28 +50,37 @@
 
         <main>
             <section id="oradores">
-                <h2><div>CONOCE A LOS</div> ORADORES</h2>
+                <div class="contentTituloOradores">
+                    <p>CONOCE A LOS</p> 
+                    <h2>ORADORES</h2>
+                </div>
                 <div class="contenedorCards">
                     <div class="card">
                         <img src="./assets/img/Steve_Jobs.jpg" width="600px" alt="Steve Jobs">
-                        <h4>Javascript</h4>
-                        <h4>React</h4>
+                        <div class="tagsCard">
+                            <h4 class="tag1">Javascript</h4>
+                            <h4 class="tag2">React</h4>
+                        </div>
                         <h3>Steve Jobs</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae eos obcaecati asperiores eius totam facilis magni eveniet nostrum iure ducimus molestiae ea harum, pariatur quo perferendis fugit reiciendis accusantium!</p>
                     </div>
     
                     <div class="card">
                         <img src="./assets/img/bill.jpg" width="600px"  alt="Bill Gates">
-                        <h4>Javascript</h4>
-                        <h4>React</h4>
+                        <div class="tagsCard">
+                            <h4 class="tag1">Javascript</h4>
+                            <h4 class="tag2">React</h4>
+                        </div>
                         <h3>Bill Gates</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae eos obcaecati asperiores eius totam facilis magni eveniet nostrum iure ducimus molestiae ea harum, pariatur quo perferendis fugit reiciendis accusantium!</p>
                     </div>
     
                     <div class="card">
                         <img src="./assets/img/ada.jpeg" width="600px"  alt="Ada Lovelace">
-                        <h4>Javascript</h4>
-                        <h4>React</h4>
+                        <div class="tagsCard">
+                            <h4 class="tag1 negocios">Negocios</h4>
+                            <h4 class="tag2 startups">Startups</h4>
+                        </div>
                         <h3>Ada Lovelace</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae eos obcaecati asperiores eius totam facilis magni eveniet nostrum iure ducimus molestiae ea harum, pariatur quo perferendis fugit reiciendis accusantium!</p>
                     </div>
@@ -80,40 +89,32 @@
 
 
             <section id="lugarFecha">
-                <div>
-                    <img src="./assets/img/honolulu.jpg" loading="lazy" width="600px" alt="Mar del plata">
+                <div class="lugarFoto">
+                    <img src="./assets/img/honolulu.jpg" loading="lazy" alt="Mar del plata">
                 </div>
-                <h2>Buenos Aires - Octubre</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat exercitationem cupiditate officia. Architecto voluptates, magnam assumenda ut velit sint nihil nisi laudantium suscipit vitae, laboriosam delectus obcaecati vero. Commodi, totam.</p>
+                <div class="textoLugarFoto">
+                    <h2>Buenos Aires - Octubre</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat exercitationem cupiditate officia. Architecto voluptates, magnam assumenda ut velit sint nihil nisi laudantium suscipit vitae, laboriosam delectus obcaecati vero. Commodi, totam.</p>
+                    <a href="#" class="botonTickets">Conocé más</a>
+                </div>
             </section>
 
             <section id="formularioOrador">
-                <h2>Conviertete en un orador</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum numquam mollitia non doloremque amet, aut consectetur assumenda soluta velit ad dolor beatae! Veniam, minus alias ducimus necessitatibus praesentium inventore?</p>
-                <form>
-                    <div>
-                        <label for="name">Ingrese su nombre:</label> <br>
-                        <input type="text" id="name" name="nombre" placeholder="Nombre" required> <br>
-                        <label for="apellido">Ingrese su apellido:</label> <br>
-                        <input type="text" id="apellido" name="apellido" name="apellido" placeholder="Apellido" required> <br>
-                    </div>
-                    <br>
-                    <div>
-                        <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="Sobre que quieres hablar?" style="resize: none;"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="reset" value="Limpiar Formulario">
-                        <input type="submit" value="Enviar Formulario">
-                    </div>
-                </form>
-                <br>
-                <br>
-                <br>
-
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237211996!2d-58.39759278841568!3d-34.6007065728426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1692223895975!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="textoFormulario">
+                    <p>CONVIERTETE EN UN</p>
+                    <h2>ORADOR</h2>
+                    <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
                 </div>
+                <form class="formulario">
+                    <input type="text" id="name" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="Sobre que quieres hablar?" style="resize: none;"></textarea>
+                    <input type="reset" value="Limpiar Formulario">
+                    <input type="submit" value="Enviar Formulario">
+                  </form>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237211996!2d-58.39759278841568!3d-34.6007065728426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1692223895975!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </section>
         </main>
         <!-- <aside>
@@ -122,16 +123,14 @@
             <iframe width="300"  src="https://www.youtube.com/embed/W-z0iTXEarw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="300" src="https://www.youtube.com/embed/KAY1j-MPpyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </aside> -->
-        <footer class="footer colorFondoGradiente altoContenedor">
-            <a href="https.//www.whatsapp.com/" target="_blank">
-                <p>wsp</p>
-            </a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+        <footer class="footer">
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
         </footer>
     </body>
 </html>

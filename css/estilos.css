@@ -119,8 +119,21 @@
 
 
 /* SECTION ORADORES */
+.contentTituloOradores{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.contentTituloOradores p,
+.contentTituloOradores h2{
+    width: 10rem;
+    font-family: sans-serif;
+    text-align: center;
+}
 .contenedorCards{
-    /* background-color:gray;*/
     width: 80%;
     margin:20px auto;
     text-align: center;
@@ -132,15 +145,146 @@
     width: 30%;
     /*height:300px;*/
     padding:5px;
-    border:1px solid grey;
+    border:none;
+    font-family: sans-serif;
 }
 
 .card img{
     width: 100%;
     height: 20rem;
 }
+.card h3,
+.card p{
+    margin-top: 10px;
+    text-align: start;
+    color: rgb(69, 69, 69);
+}
+.tagsCard{
+    display: flex;
+
+}
+.tag1, .tag2{
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 2rem;
+}
+.tag1{
+    background: rgb(235, 235, 4);
+}
+.tag2{
+    background: rgb(7, 147, 155);
+    color: white;
+}
+.negocios{
+    background: rgb(168, 168, 168);
+}
+.startups{
+    background: rgb(133, 14, 14);
+}
+
+/* LUGAR FECHA */
+#lugarFecha{
+    height: 100vh;
+    display: flex;
+    background: rgb(49, 49, 49);
+    color: white;
+    font-family: sans-serif;
+}
+
+.lugarFoto img{
+    height: 100vh;
+    width: 45rem;
+}
+.textoLugarFoto{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.textoLugarFoto h2,
+.textoLugarFoto p,
+.textoLugarFoto a{
+    margin-top: 2rem;
+}
+.botonTickets{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+}
+/* FORMULARIO ORADOR */
+#formularioOrador {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textoFormulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 50%;
+  }
+  
+  textarea {
+    grid-column: span 2;
+    height: 10rem;
+  }
+  
+  .formulario input {
+    display: inline-block;
+    height: 2rem;
+  }
+
+  iframe{
+    margin-top: 20px;
+    width: 100vh;
+  }
+
 
 /* FOOTER */
+.footer{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    background: #1c3844;
+    justify-content: center;
+    align-items: center;
+}
 .footer a{
     color:white;
+    margin-right: 5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    width: 5rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1300px){
+    *{ background-color: red;}
+}
+@media(max-width: 800px){
+    *{ background-color: green;}
+}
+@media(max-width: 600px){
+    *{ background-color: blue;}
 }
