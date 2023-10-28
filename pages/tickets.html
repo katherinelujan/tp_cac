@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrados - CAC</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="../assets/img/codoacodo.png" alt="logo codo a codo" loading="lazy">
+            Conf Bs As
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#conferencia">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#oradores">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formularioOrador">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/tickets.html">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Estudiante</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p class="card-text"><b>80%</b></p>
+                        <p class="card-text">*presentar documento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-secondary">
+                    <div class="card-body">
+                        <h5 class="card-title">Trainee</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p class="card-text"><b>50%</b></p>
+                        <p class="card-text">*presentar documento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p class="card-text"><b>15%</b></p>
+                        <p class="card-text">*presentar documento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center">VALOR DE TICKET $200</h1>
+    
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input id="apellido" type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <input id="correo" type="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+    
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input id="cantidad" type="number" class="form-control" placeholder="Cantidad de Números">
+                        </div>
+                        <div class="col">
+                            <select id="categoria" class="form-control">
+                                <option value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Total a Pagar:</label>
+                    <input id="totalPagar" type="text" class="form-control" disabled>
+                </div>
+    
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <button id="botonBorrar" type="button" class="btn btn-danger btn-block">Borrar</button>
+                        </div>
+                        <div class="col">
+                            <button id="botonResumen" type="button" class="btn btn-success btn-block">Resumen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="../tickets.js"></script>
+        
+    </body>
+</html>
 
