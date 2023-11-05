@@ -39,10 +39,29 @@ function limpiar() {
 botonResumen.addEventListener('click', aplicarDescuento);
 
 function aplicarDescuento(){
-    if(nombre.value == '' && apellido.value == '' && correo.value == '' && cantidad.value == '' && cantidad.value == 0 ){
-        alert('No podemos darte el resumen porque no llenaste todos tus datos')
+    // Lista de campos
+    let campos = [nombre, apellido, correo, cantidad];
+    let completados = 0;
+
+    for (let i = 0; i < campos.length; i++) {
+        if (campos[i].value !== '') {
+            completados++;
+        }
     }
-    else if(cantidad.value > 0 && categoria.value == 'estudiante'){
+
+    if (completados === 0) {
+    alert('No podemos darte el resumen porque no llenaste todos tus datos');
+    } else if (completados === 1) {
+    alert('Completaste solo un campo');
+    } else if (completados === 2) {
+    alert('Completaste dos campos');
+    } else if (completados === 3) {
+    alert('Completaste tres campos');
+    } else if (completados === 4) {
+    alert('Completaste todos los campos');
+    }
+
+    if(cantidad.value > 0 && categoria.value == 'estudiante'){
         totalSinDescuento = cantidad.value * PRECIO;
         totalConDescuento = totalSinDescuento - (totalSinDescuento * DESCUENTO_ESTUDIANTE);
         totalPagar.value = totalConDescuento;
