@@ -49,16 +49,36 @@ function aplicarDescuento(){
         }
     }
 
+    function resetearEstilos() {
+        apellido.style.border = ''; 
+        correo.style.border = ''; 
+        cantidad.style.border = ''; 
+        categoria.style.border = ''; 
+    }
+
     if (completados === 0) {
     alert('No podemos darte el resumen porque no llenaste todos tus datos');
     } else if (completados === 1) {
-    alert('Completaste solo un campo');
+        alert('Completaste solo un campo');
+        resetearEstilos();
+        apellido.style.border='1px solid red';
+        correo.style.border='1px solid red';
+        cantidad.style.border='1px solid red';
+        categoria.style.border='1px solid red';
     } else if (completados === 2) {
-    alert('Completaste dos campos');
+        alert('Completaste dos campos');
+        resetearEstilos();
+        correo.style.border='1px solid red';
+        cantidad.style.border='1px solid red';
+        categoria.style.border='1px solid red';
     } else if (completados === 3) {
-    alert('Completaste tres campos');
+        alert('Completaste tres campos');
+        resetearEstilos();
+        cantidad.style.border='1px solid red';
+        categoria.style.border='1px solid red';
     } else if (completados === 4) {
-    alert('Completaste todos los campos');
+        alert('Completaste todos los campos');
+        resetearEstilos();
     }
 
     if(cantidad.value > 0 && categoria.value == 'estudiante'){
