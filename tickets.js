@@ -50,6 +50,7 @@ function aplicarDescuento(){
     }
 
     function resetearEstilos() {
+        nombre.style.border = ''; 
         apellido.style.border = ''; 
         correo.style.border = ''; 
         cantidad.style.border = ''; 
