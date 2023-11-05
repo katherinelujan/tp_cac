@@ -57,7 +57,13 @@ function aplicarDescuento(){
     }
 
     if (completados === 0) {
-    alert('No podemos darte el resumen porque no llenaste todos tus datos');
+        alert('No podemos darte el resumen porque no llenaste todos tus datos');
+        resetearEstilos();
+        nombre.style.border='1px solid red';
+        apellido.style.border='1px solid red';
+        correo.style.border='1px solid red';
+        cantidad.style.border='1px solid red';
+        categoria.style.border='1px solid red';
     } else if (completados === 1) {
         alert('Completaste solo un campo');
         resetearEstilos();
